@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B3ED7360AFA4DCC64C076D3 /* Pods_EmoteXpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CACD9800271A09D86114B9 /* Pods_EmoteXpress.framework */; };
+		9900681D294A22C400F74DF3 /* EDInputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900681C294A22C400F74DF3 /* EDInputContainerView.swift */; };
+		9900681F294A276A00F74DF3 /* EDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900681E294A276A00F74DF3 /* EDTextField.swift */; };
+		99006821294B57CD00F74DF3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99006820294B57CD00F74DF3 /* LoginViewModel.swift */; };
+		992A1F282982B33500B291AE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 992A1F272982B33500B291AE /* GoogleService-Info.plist */; };
+		995D82402948CF31004E2301 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D823F2948CF31004E2301 /* LoginController.swift */; };
+		995D82422948CF57004E2301 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D82412948CF57004E2301 /* RegistrationController.swift */; };
+		995D82442948D338004E2301 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D82432948D338004E2301 /* Extensions.swift */; };
+		9984E389294C706D00975077 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9984E388294C706D00975077 /* RegistrationViewModel.swift */; };
+		99B5FFB02961EE640096AB99 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B5FFAF2961EE640096AB99 /* NewMessageController.swift */; };
+		99B5FFB22962D72E0096AB99 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B5FFB12962D72E0096AB99 /* UserCell.swift */; };
+		99B5FFB42962DDBD0096AB99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B5FFB32962DDBD0096AB99 /* User.swift */; };
+		99B5FFB62962E1560096AB99 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B5FFB52962E1560096AB99 /* Service.swift */; };
+		99D4ACA72950AE8A00238A16 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D4ACA62950AE8A00238A16 /* AuthService.swift */; };
+		99DA033E29475A1A0093ED93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA033D29475A1A0093ED93 /* AppDelegate.swift */; };
+		99DA034029475A1A0093ED93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA033F29475A1A0093ED93 /* SceneDelegate.swift */; };
+		99DA034229475A1A0093ED93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA034129475A1A0093ED93 /* ViewController.swift */; };
+		99DA034529475A1A0093ED93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DA034329475A1A0093ED93 /* Main.storyboard */; };
+		99DA034729475A1D0093ED93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99DA034629475A1D0093ED93 /* Assets.xcassets */; };
+		99DA034A29475A1D0093ED93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DA034829475A1D0093ED93 /* LaunchScreen.storyboard */; };
+		99DA035829475CAE0093ED93 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA035729475CAE0093ED93 /* ConversationsController.swift */; };
+		99ED1C3A2963444E00A2D299 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C392963444E00A2D299 /* ChatController.swift */; };
+		99ED1C3C29634BB300A2D299 /* EDInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C3B29634BB300A2D299 /* EDInputAccessoryView.swift */; };
+		99ED1C3E2963830D00A2D299 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C3D2963830D00A2D299 /* MessageCell.swift */; };
+		99ED1C402964347700A2D299 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C3F2964347700A2D299 /* Message.swift */; };
+		99ED1C422964403800A2D299 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C412964403800A2D299 /* MessageViewModel.swift */; };
+		99ED1C442965CE6600A2D299 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C432965CE6600A2D299 /* Constants.swift */; };
+		99ED1C462965E57900A2D299 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C452965E57900A2D299 /* ConversationCell.swift */; };
+		99ED1C482965E96600A2D299 /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C472965E96600A2D299 /* ConversationViewModel.swift */; };
+		99ED1C522965EE8A00A2D299 /* EmoteVisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C4C2965EE8100A2D299 /* EmoteVisionViewController.swift */; };
+		99ED1C532965EE8A00A2D299 /* EmotePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C4D2965EE8300A2D299 /* EmotePreviewView.swift */; };
+		99ED1C542965EE8A00A2D299 /* EmoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99ED1C4E2965EE8500A2D299 /* EmoteViewController.xib */; };
+		99ED1C572965EE8A00A2D299 /* EmoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C512965EE8A00A2D299 /* EmoteViewController.swift */; };
+		99ED1C592966241F00A2D299 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C582966241F00A2D299 /* BaseController.swift */; };
+		99ED1C5B296625C200A2D299 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C5A296625C200A2D299 /* BaseTableController.swift */; };
+		99ED1C5D296625E800A2D299 /* BaseCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C5C296625E800A2D299 /* BaseCollectionController.swift */; };
+		99ED1C7E2968A78000A2D299 /* EmoteTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C7D2968A78000A2D299 /* EmoteTracker.swift */; };
+		99ED1C8029698D0800A2D299 /* EDSmileDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 99ED1C7F29698D0800A2D299 /* EDSmileDetector.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0207B1CEC0BAB02F0EEF5FAA /* Pods-EmoteXpress.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmoteXpress.release.xcconfig"; path = "Target Support Files/Pods-EmoteXpress/Pods-EmoteXpress.release.xcconfig"; sourceTree = "<group>"; };
+		92CACD9800271A09D86114B9 /* Pods_EmoteXpress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmoteXpress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9900681C294A22C400F74DF3 /* EDInputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDInputContainerView.swift; sourceTree = "<group>"; };
+		9900681E294A276A00F74DF3 /* EDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDTextField.swift; sourceTree = "<group>"; };
+		99006820294B57CD00F74DF3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		992A1F272982B33500B291AE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		995D823F2948CF31004E2301 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		995D82412948CF57004E2301 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		995D82432948D338004E2301 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9984E388294C706D00975077 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		99B5FFAF2961EE640096AB99 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		99B5FFB12962D72E0096AB99 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		99B5FFB32962DDBD0096AB99 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		99B5FFB52962E1560096AB99 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		99D4ACA62950AE8A00238A16 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		99DA033A29475A1A0093ED93 /* EmoteXpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoteXpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DA033D29475A1A0093ED93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99DA033F29475A1A0093ED93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		99DA034129475A1A0093ED93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99DA034429475A1A0093ED93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99DA034629475A1D0093ED93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99DA034929475A1D0093ED93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99DA034B29475A1D0093ED93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99DA035729475CAE0093ED93 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		99ED1C392963444E00A2D299 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		99ED1C3B29634BB300A2D299 /* EDInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDInputAccessoryView.swift; sourceTree = "<group>"; };
+		99ED1C3D2963830D00A2D299 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		99ED1C3F2964347700A2D299 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		99ED1C412964403800A2D299 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		99ED1C432965CE6600A2D299 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		99ED1C452965E57900A2D299 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		99ED1C472965E96600A2D299 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		99ED1C4C2965EE8100A2D299 /* EmoteVisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoteVisionViewController.swift; sourceTree = "<group>"; };
+		99ED1C4D2965EE8300A2D299 /* EmotePreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotePreviewView.swift; sourceTree = "<group>"; };
+		99ED1C4E2965EE8500A2D299 /* EmoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoteViewController.xib; sourceTree = "<group>"; };
+		99ED1C512965EE8A00A2D299 /* EmoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoteViewController.swift; sourceTree = "<group>"; };
+		99ED1C582966241F00A2D299 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		99ED1C5A296625C200A2D299 /* BaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
+		99ED1C5C296625E800A2D299 /* BaseCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionController.swift; sourceTree = "<group>"; };
+		99ED1C7D2968A78000A2D299 /* EmoteTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoteTracker.swift; sourceTree = "<group>"; };
+		99ED1C7F29698D0800A2D299 /* EDSmileDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EDSmileDetector.mlmodel; sourceTree = "<group>"; };
+		F7D40DCC0DA55A6C28B8B0F3 /* Pods-EmoteXpress.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmoteXpress.debug.xcconfig"; path = "Target Support Files/Pods-EmoteXpress/Pods-EmoteXpress.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99DA033729475A1A0093ED93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B3ED7360AFA4DCC64C076D3 /* Pods_EmoteXpress.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		687FABF713879283864C7B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92CACD9800271A09D86114B9 /* Pods_EmoteXpress.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		995D823E2948CF00004E2301 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				995D823F2948CF31004E2301 /* LoginController.swift */,
+				995D82412948CF57004E2301 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		9984E38A294C707700975077 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				99006820294B57CD00F74DF3 /* LoginViewModel.swift */,
+				9984E388294C706D00975077 /* RegistrationViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		99DA033129475A1A0093ED93 = {
+			isa = PBXGroup;
+			children = (
+				99DA033C29475A1A0093ED93 /* EmoteXpress */,
+				99DA033B29475A1A0093ED93 /* Products */,
+				D24AB56E52B26AB263FB2F10 /* Pods */,
+				687FABF713879283864C7B19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99DA033B29475A1A0093ED93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99DA033A29475A1A0093ED93 /* EmoteXpress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99DA033C29475A1A0093ED93 /* EmoteXpress */ = {
+			isa = PBXGroup;
+			children = (
+				99ED1C7F29698D0800A2D299 /* EDSmileDetector.mlmodel */,
+				99DA035629475B740093ED93 /* Models */,
+				99DA035529475B700093ED93 /* Views */,
+				99DA035429475B6D0093ED93 /* ViewModels */,
+				99DA035329475B6A0093ED93 /* Controllers */,
+				99DA035229475B660093ED93 /* API */,
+				99DA035129475B590093ED93 /* Utils */,
+				99DA033D29475A1A0093ED93 /* AppDelegate.swift */,
+				99DA033F29475A1A0093ED93 /* SceneDelegate.swift */,
+				99DA034129475A1A0093ED93 /* ViewController.swift */,
+				99DA034329475A1A0093ED93 /* Main.storyboard */,
+				992A1F272982B33500B291AE /* GoogleService-Info.plist */,
+				99DA034629475A1D0093ED93 /* Assets.xcassets */,
+				99DA034829475A1D0093ED93 /* LaunchScreen.storyboard */,
+				99DA034B29475A1D0093ED93 /* Info.plist */,
+			);
+			path = EmoteXpress;
+			sourceTree = "<group>";
+		};
+		99DA035129475B590093ED93 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				995D82432948D338004E2301 /* Extensions.swift */,
+				99ED1C432965CE6600A2D299 /* Constants.swift */,
+				99ED1C7D2968A78000A2D299 /* EmoteTracker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		99DA035229475B660093ED93 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				99D4ACA62950AE8A00238A16 /* AuthService.swift */,
+				99B5FFB52962E1560096AB99 /* Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		99DA035329475B6A0093ED93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99ED1C4B2965EDB100A2D299 /* Emote */,
+				995D823E2948CF00004E2301 /* Authentication */,
+				99ED1C492965ED5900A2D299 /* Chat */,
+				99ED1C582966241F00A2D299 /* BaseController.swift */,
+				99ED1C5A296625C200A2D299 /* BaseTableController.swift */,
+				99ED1C5C296625E800A2D299 /* BaseCollectionController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		99DA035429475B6D0093ED93 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9984E38A294C707700975077 /* Authentication */,
+				99ED1C4A2965ED8B00A2D299 /* Chat */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		99DA035529475B700093ED93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9900681C294A22C400F74DF3 /* EDInputContainerView.swift */,
+				9900681E294A276A00F74DF3 /* EDTextField.swift */,
+				99B5FFB12962D72E0096AB99 /* UserCell.swift */,
+				99ED1C3B29634BB300A2D299 /* EDInputAccessoryView.swift */,
+				99ED1C3D2963830D00A2D299 /* MessageCell.swift */,
+				99ED1C452965E57900A2D299 /* ConversationCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99DA035629475B740093ED93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99B5FFB32962DDBD0096AB99 /* User.swift */,
+				99ED1C3F2964347700A2D299 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99ED1C492965ED5900A2D299 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				99DA035729475CAE0093ED93 /* ConversationsController.swift */,
+				99B5FFAF2961EE640096AB99 /* NewMessageController.swift */,
+				99ED1C392963444E00A2D299 /* ChatController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		99ED1C4A2965ED8B00A2D299 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				99ED1C412964403800A2D299 /* MessageViewModel.swift */,
+				99ED1C472965E96600A2D299 /* ConversationViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		99ED1C4B2965EDB100A2D299 /* Emote */ = {
+			isa = PBXGroup;
+			children = (
+				99ED1C4D2965EE8300A2D299 /* EmotePreviewView.swift */,
+				99ED1C512965EE8A00A2D299 /* EmoteViewController.swift */,
+				99ED1C4E2965EE8500A2D299 /* EmoteViewController.xib */,
+				99ED1C4C2965EE8100A2D299 /* EmoteVisionViewController.swift */,
+			);
+			path = Emote;
+			sourceTree = "<group>";
+		};
+		D24AB56E52B26AB263FB2F10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7D40DCC0DA55A6C28B8B0F3 /* Pods-EmoteXpress.debug.xcconfig */,
+				0207B1CEC0BAB02F0EEF5FAA /* Pods-EmoteXpress.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99DA033929475A1A0093ED93 /* EmoteXpress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99DA034E29475A1D0093ED93 /* Build configuration list for PBXNativeTarget "EmoteXpress" */;
+			buildPhases = (
+				F4FC2393B52F92897A5B1E84 /* [CP] Check Pods Manifest.lock */,
+				99DA033629475A1A0093ED93 /* Sources */,
+				99DA033729475A1A0093ED93 /* Frameworks */,
+				99DA033829475A1A0093ED93 /* Resources */,
+				21E2A02C29A2C5F1AF82B31B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmoteXpress;
+			productName = FireChat;
+			productReference = 99DA033A29475A1A0093ED93 /* EmoteXpress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99DA033229475A1A0093ED93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					99DA033929475A1A0093ED93 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 99DA033529475A1A0093ED93 /* Build configuration list for PBXProject "EmoteXpress" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99DA033129475A1A0093ED93;
+			productRefGroup = 99DA033B29475A1A0093ED93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99DA033929475A1A0093ED93 /* EmoteXpress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99DA033829475A1A0093ED93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DA034A29475A1D0093ED93 /* LaunchScreen.storyboard in Resources */,
+				99DA034729475A1D0093ED93 /* Assets.xcassets in Resources */,
+				992A1F282982B33500B291AE /* GoogleService-Info.plist in Resources */,
+				99DA034529475A1A0093ED93 /* Main.storyboard in Resources */,
+				99ED1C542965EE8A00A2D299 /* EmoteViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E2A02C29A2C5F1AF82B31B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmoteXpress/Pods-EmoteXpress-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmoteXpress/Pods-EmoteXpress-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmoteXpress/Pods-EmoteXpress-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FC2393B52F92897A5B1E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmoteXpress-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99DA033629475A1A0093ED93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DA034229475A1A0093ED93 /* ViewController.swift in Sources */,
+				99ED1C442965CE6600A2D299 /* Constants.swift in Sources */,
+				99ED1C592966241F00A2D299 /* BaseController.swift in Sources */,
+				9984E389294C706D00975077 /* RegistrationViewModel.swift in Sources */,
+				9900681D294A22C400F74DF3 /* EDInputContainerView.swift in Sources */,
+				99D4ACA72950AE8A00238A16 /* AuthService.swift in Sources */,
+				99ED1C5D296625E800A2D299 /* BaseCollectionController.swift in Sources */,
+				99ED1C422964403800A2D299 /* MessageViewModel.swift in Sources */,
+				99DA033E29475A1A0093ED93 /* AppDelegate.swift in Sources */,
+				99DA035829475CAE0093ED93 /* ConversationsController.swift in Sources */,
+				99ED1C522965EE8A00A2D299 /* EmoteVisionViewController.swift in Sources */,
+				99B5FFB22962D72E0096AB99 /* UserCell.swift in Sources */,
+				99ED1C8029698D0800A2D299 /* EDSmileDetector.mlmodel in Sources */,
+				99DA034029475A1A0093ED93 /* SceneDelegate.swift in Sources */,
+				99B5FFB42962DDBD0096AB99 /* User.swift in Sources */,
+				99B5FFB62962E1560096AB99 /* Service.swift in Sources */,
+				99ED1C3E2963830D00A2D299 /* MessageCell.swift in Sources */,
+				99ED1C482965E96600A2D299 /* ConversationViewModel.swift in Sources */,
+				995D82422948CF57004E2301 /* RegistrationController.swift in Sources */,
+				99ED1C7E2968A78000A2D299 /* EmoteTracker.swift in Sources */,
+				995D82402948CF31004E2301 /* LoginController.swift in Sources */,
+				995D82442948D338004E2301 /* Extensions.swift in Sources */,
+				99ED1C5B296625C200A2D299 /* BaseTableController.swift in Sources */,
+				99ED1C532965EE8A00A2D299 /* EmotePreviewView.swift in Sources */,
+				99006821294B57CD00F74DF3 /* LoginViewModel.swift in Sources */,
+				99ED1C3A2963444E00A2D299 /* ChatController.swift in Sources */,
+				99ED1C572965EE8A00A2D299 /* EmoteViewController.swift in Sources */,
+				99ED1C3C29634BB300A2D299 /* EDInputAccessoryView.swift in Sources */,
+				99ED1C462965E57900A2D299 /* ConversationCell.swift in Sources */,
+				99ED1C402964347700A2D299 /* Message.swift in Sources */,
+				9900681F294A276A00F74DF3 /* EDTextField.swift in Sources */,
+				99B5FFB02961EE640096AB99 /* NewMessageController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		99DA034329475A1A0093ED93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99DA034429475A1A0093ED93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99DA034829475A1D0093ED93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99DA034929475A1D0093ED93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99DA034C29475A1D0093ED93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99DA034D29475A1D0093ED93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99DA034F29475A1D0093ED93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D40DCC0DA55A6C28B8B0F3 /* Pods-EmoteXpress.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P67PNAMVCQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmoteXpress/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We use your camera to get your facial expression";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow for photo uploads";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecodes.EmoteXpress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99DA035029475A1D0093ED93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0207B1CEC0BAB02F0EEF5FAA /* Pods-EmoteXpress.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P67PNAMVCQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmoteXpress/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We use your camera to get your facial expression";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Allow for photo uploads";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecodes.EmoteXpress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99DA033529475A1A0093ED93 /* Build configuration list for PBXProject "EmoteXpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99DA034C29475A1D0093ED93 /* Debug */,
+				99DA034D29475A1D0093ED93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99DA034E29475A1D0093ED93 /* Build configuration list for PBXNativeTarget "EmoteXpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99DA034F29475A1D0093ED93 /* Debug */,
+				99DA035029475A1D0093ED93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99DA033229475A1A0093ED93 /* Project object */;
+}

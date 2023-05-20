@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZARVisionViewController" customModule="EmoteXpress" customModuleProvider="target">
+            <connections>
+                <outlet property="previewView" destination="dSk-2M-sny" id="fIu-Cy-BwP"/>
+                <outlet property="view" destination="cgk-Ms-3LQ" id="qtJ-yp-Esw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cgk-Ms-3LQ">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-2M-sny" userLabel="Preview View" customClass="EmotePreviewView" customModule="EmoteXpress" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rng-oF-g4L"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dSk-2M-sny" secondAttribute="bottom" id="6m2-zU-Pqe"/>
+                <constraint firstItem="dSk-2M-sny" firstAttribute="top" secondItem="cgk-Ms-3LQ" secondAttribute="top" id="Gd9-pO-jBx"/>
+                <constraint firstItem="dSk-2M-sny" firstAttribute="centerX" secondItem="cgk-Ms-3LQ" secondAttribute="centerX" id="fqK-5K-DMm"/>
+                <constraint firstItem="dSk-2M-sny" firstAttribute="centerY" secondItem="cgk-Ms-3LQ" secondAttribute="centerY" id="kzZ-id-MxF"/>
+                <constraint firstItem="dSk-2M-sny" firstAttribute="trailing" secondItem="cgk-Ms-3LQ" secondAttribute="trailing" id="sby-MB-juU"/>
+            </constraints>
+            <point key="canvasLocation" x="632.82442748091603" y="19.718309859154932"/>
+        </view>
+        <tapGestureRecognizer id="v25-Oa-izo">
+            <connections>
+                <action selector="handleTap:" destination="-1" id="xv5-4W-e7L"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
